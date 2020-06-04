@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round"
+        android:fontFamily="@font/neuzeitgrotesk"
+        android:gravity="center_vertical"
+        android:hint="Search"
+        android:paddingLeft="20dp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="#D9DBEA"
+        android:textSize="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/discussion_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_box"
+        android:layout_marginTop="11dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/moreButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/circle"
+        android:src="@drawable/ic_more_horiz_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+
+    <include layout="@layout/bottombutton"/>
+
+</RelativeLayout>

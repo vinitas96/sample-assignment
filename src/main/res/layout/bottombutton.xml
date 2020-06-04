@@ -10,6 +10,7 @@
     android:id="@+id/bottomsheet"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
+    android:layout_alignParentBottom="true"
     android:visibility="invisible">
 
     <TextView
@@ -79,8 +80,7 @@
         android:layout_height="60dp"
         android:textStyle="bold"
         android:padding="12dp"
-        android:layout_marginBottom="48dp"
-        android:layout_marginRight="39dp"
+        android:layout_marginBottom="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/circle"

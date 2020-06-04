@@ -1,4 +1,4 @@
-package com.example.myapplication1;
+package com.example.assintern;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.myapplication1", appContext.getPackageName());
+        assertEquals( "com.example.assintern", appContext.getPackageName() );
     }
 }
